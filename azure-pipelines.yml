@@ -95,10 +95,6 @@ jobs:
     inputs:
       restoreSolution: WebAppWithDatabase.sln
 
-  - task: NuGetCommand@2
-    displayName: 'NuGet restore'
-    inputs:
-      restoreSolution: SeleniumUiTests/SeleniumUiTests.csproj
       
   - task: MSBuild@1
     displayName: 'Build project SeleniumUiTests.csproj'
